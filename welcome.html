@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cool Working - Boas Vindas</title>
+
+  <!-- Link ao CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <style>
+    /* Definindo as cores conforme fornecido */
+    :root {
+      --dark-color: #121B25;
+      --grey-color: #83898F;
+      --body-text-color: #FFFFFF;
+      --light-text-color: #D6D6D6;
+      --link-color: #092035;
+      --highlight-color: #4e80bf; /* Azul claro para destacar títulos */
+    }
+
+    /* Resetando margens e padding padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Fontes */
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: var(--dark-color); /* Fundo escuro */
+      color: var(--body-text-color); /* Texto branco */
+      line-height: 1.6;
+      height: 100vh; /* Garantir que ocupe toda a altura da tela */
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Centraliza o conteúdo vertical e horizontalmente */
+      text-align: center;
+      flex-direction: column; /* Alinha as seções verticalmente */
+    }
+
+    /* Estilo do container centralizado */
+    #welcome-section {
+      background-color: var(--dark-color); /* Fundo escuro */
+      color: var(--body-text-color); /* Texto branco */
+      border-radius: 10px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .welcome-content {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 3rem; /* Aumenta o tamanho do título */
+      font-weight: 700;
+      color: var(--highlight-color); /* Azul claro para o título */
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efeito de sombra no título */
+    }
+
+    .description {
+      font-size: 1.2rem; /* Aumenta o tamanho da descrição */
+      color: var(--light-text-color); /* Texto cinza claro */
+      line-height: 1.6;
+    }
+
+    /* Estilo das seções de características */
+    .feature-section {
+      padding: 50px 0;
+      background-color: var(--dark-color);
+      width: 100%;
+    }
+
+    .feature-title {
+      font-size: 2rem;
+      color: var(--highlight-color);
+      margin-bottom: 20px;
+    }
+
+    .feature {
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+      max-width: 250px;
+    }
+
+    .feature img {
+      border-radius: 50%;
+      margin-bottom: 15px;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .feature h4 {
+      font-size: 1.2rem;
+      color: var(--highlight-color);
+      margin: 15px 0;
+    }
+
+    .feature p {
+      color: var(--light-text-color);
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .feature {
+        display: block;
+        margin: 20px 0;
+      }
+    }
+  </style>
+
+  <!-- Seção de Boas-Vindas -->
+  <section id="welcome-section">
+    <div class="container">
+      <div class="welcome-content">
+        <h1 class="title">Bem-vindo ao Cool Working!</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Características -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="feature">
+        <img src="images/search.png" alt="Fácil de Encontrar">
+        <h4>Fácil de Encontrar</h4>
+        <p>Encontre a casa ideal para trabalhar ou relaxar com rapidez e facilidade.</p>
+      </div>
+      <div class="feature">
+        <img src="images/price.png" alt="Preços Acessíveis">
+        <h4>Preços Acessíveis</h4>
+        <p>Oferecemos opções para todos os bolsos, garantindo conforto e economia.</p>
+      </div>
+      <div class="feature">
+        <img src="images/time.png" alt="Processo Rápido">
+        <h4>Processo Rápido</h4>
+        <p>Reserve sua casa em poucos cliques. Simples e direto.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
